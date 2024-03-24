@@ -31,7 +31,16 @@ SECRET_KEY = 'django-insecure-@1#&zz$k$sikd212&o(#-*oz_!)cyrxo^b!kx8=map!-4lap4q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+CORS_ALLOW_CREDENTIALS = True
+
+ALLOWED_HOSTS = [
+    'services.26digitaldev.com',
+    'http://localhost:3000', # Your React app's origin
+    'http://localhost:8000',
+    'https://malema.vercel.app',
+    'localhost',
+    '*'
+    ]
 
 
 # Application definition
@@ -102,12 +111,22 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }"""
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'users',
+#         'USER': 'root',
+#         'PASSWORD': '',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'users',
-        'USER': 'root',
-        'PASSWORD': '',
+        'NAME': 'billing_hackathon',
+        'USER': 'username',
+        'PASSWORD': 'username@2023',
         'HOST': 'localhost',
         'PORT': '3306',
     }
