@@ -124,7 +124,7 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'billing_hackathon',
+        'NAME': 'billing_software',
         'USER': 'username',
         'PASSWORD': 'username@2023',
         'HOST': 'localhost',
