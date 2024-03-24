@@ -124,9 +124,9 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'billing_software',
-        'USER': 'username',
-        'PASSWORD': 'username@2023',
+        'NAME': 'botepco_auth',
+        'USER': 'botepco',
+        'PASSWORD': 'Ushima@73537794',
         'HOST': 'localhost',
         'PORT': '3306',
     }
